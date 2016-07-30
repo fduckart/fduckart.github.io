@@ -48,22 +48,67 @@
     </nav>
 
     <div class="container">
-        <div class='card-block'>
-            <h2 style='margin-top: 0rem;'>Favorite Albums</h2>
-            <p class="lead text-muted">
-                I have spent hours and hours listening to each and every one.
-            </p>
-            <table class='table lead'>
-                <tr><td class='lead'>Shoot Out The Lights</td><td>&nbsp;</td><td>Richard & Linda Thompson</td></tr>
-                <tr><td class='lead'>Another Green World</td><td>&nbsp;</td><td>Brian Eno</td></tr>
-                <tr><td class='lead'>Kind Of Blue</td><td>&nbsp;</td><td>Miles Davis</td></tr>
-                <tr><td class='lead'>Moondance</td><td>&nbsp;</td><td>Van Morrison</td></tr>
-                <tr><td class='lead'>Horses</td><td>&nbsp;</td><td>Patti Smith</td></tr>
-                <tr><td class='lead'>How Will the Wolf Survive?</td><td>&nbsp;</td><td>Los Lobos</td></tr>
-                <tr><td class='lead'>El Rayo-X</td><td>&nbsp;</td><td>David Lindley</td></tr>
-                <tr><td class='lead'>Rid Of Me</td><td>&nbsp;</td><td>PJ Harvey</td></tr>
-                <tr><td class='lead'>Highway to Hell</td><td>&nbsp;</td><td>AC/DC</td></tr>
-            </table>
+        <ul id='tabs' class="nav nav-tabs" data-tabs='tabs'>
+            <li role="presentation" class="active"><a href="#records" data-toggle="tab" class='label label-default'>Records</a></li>
+            <li role="presentation"><a href="#films" data-toggle="tab" class='label label-default'>Films</a></li>
+            <li role="presentation"><a href="#books" data-toggle="tab" class='label label-default'>Books</a></li>
+        </ul>
+        <div id='fav-tab-content' class='tab-content'  style='padding-top: 0rem;'>
+            <div class='tab-pane active' id='records'>
+                <div class='card-block'>
+                    <h3>Favorite Albums</h3>
+                    <p class="lead text-muted">
+                        I have spent hours and hours listening to each and every one.
+                    </p>
+                    <table class='table lead'>
+                        <tr><td class='lead'>Shoot Out The Lights</td><td>&nbsp;</td><td>Richard & Linda Thompson</td></tr>
+                        <tr><td class='lead'>Another Green World</td><td>&nbsp;</td><td>Brian Eno</td></tr>
+                        <tr><td class='lead'>Kind Of Blue</td><td>&nbsp;</td><td>Miles Davis</td></tr>
+                        <tr><td class='lead'>Moondance</td><td>&nbsp;</td><td>Van Morrison</td></tr>
+                        <tr><td class='lead'>Horses</td><td>&nbsp;</td><td>Patti Smith</td></tr>
+                        <tr><td class='lead'>How Will the Wolf Survive?</td><td>&nbsp;</td><td>Los Lobos</td></tr>
+                        <tr><td class='lead'>El Rayo-X</td><td>&nbsp;</td><td>David Lindley</td></tr>
+                        <tr><td class='lead'>Rid Of Me</td><td>&nbsp;</td><td>PJ Harvey</td></tr>
+                        <tr><td class='lead'>Highway to Hell</td><td>&nbsp;</td><td>AC/DC</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class='tab-pane' id='films'>
+                <div class='card-block'>
+                    <h3>Favorite Films</h3>
+                    <p class="lead text-muted">
+                        These are great films.
+                    </p>
+                    <table class='table lead'>
+                        <tr><td class='lead'>Citizen Kane</td><td>&nbsp;</td><td>Orsen Welles</td></tr>
+                        <tr><td class='lead'>Chinatown</td><td>&nbsp;</td><td>Brian DePalma</td></tr>
+                        <tr><td class='lead'>Blade Runner</td><td>&nbsp;</td><td>Ridely Scott</td></tr>
+                        <tr><td class='lead'>Vertigo</td><td>&nbsp;</td><td>Alfred Hitchcock</td></tr>
+                        <tr><td class='lead'>Sunset Boulevard</td><td>&nbsp;</td><td>Billy Wilder</td></tr>
+                        <tr><td class='lead'>Annie Hall</td><td>&nbsp;</td><td>Woody Allen</td></tr>
+                        <tr><td class='lead'>Out of the Past</td><td>&nbsp;</td><td>Jacques Tourneur</td></tr>
+                        <tr><td class='lead'>The Wizard of Oz</td><td>&nbsp;</td><td>Victor Fleming</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class='tab-pane' id='books'>
+                <div class='card-block'>
+                    <h3>Favorite Books</h3>
+                    <p class="lead text-muted">
+                        This odd mix books make up my favorites.
+                    </p>
+                    <table class='table lead'>
+                        <tr><td class='lead'>Lolita</td><td>&nbsp;</td><td>Vladimir Nabokov</td></tr>
+                        <tr><td class='lead'>Nineteen Eighty Four</td><td>&nbsp;</td><td>George Orwell</td></tr>
+                        <tr><td class='lead'>Lucky Jim</td><td>&nbsp;</td><td>Kingsley Amis</td></tr>
+                        <tr><td class='lead'>Fear and Loathing in Las Vegas</td><td>&nbsp;</td><td>Hunter S. Thomspon</td></tr>
+                        <tr><td class='lead'>Brave New World</td><td>&nbsp;</td><td>Aldous Huxley</td></tr>
+                        <tr><td class='lead'>Experience</td><td>&nbsp;</td><td>Martin Amis</td></tr>
+                        <tr><td class='lead'>Life</td><td>&nbsp;</td><td>Keith Richards</td></tr>
+                        <tr><td class='lead'>Portnoy's Complaint</td><td>&nbsp;</td><td>Philip Roth</td></tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
