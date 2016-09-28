@@ -1,8 +1,12 @@
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover {
-    color: #FF8C00;
+    color: #FF4500;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
     color: #0275d8;
 }
+
+.label-default {
+    font-size: 1em;
+ }
