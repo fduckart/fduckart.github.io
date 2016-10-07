@@ -1,3 +1,8 @@
+.navbar-default .navbar-brand > b {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 1.4em;
+}
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover {
     color: #d35400;
