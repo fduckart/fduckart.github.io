@@ -15,3 +15,66 @@
 .label-default {
     font-size: 1em;
  }
+
+.tab-headings {
+    font-family: 'Bungee Shade',
+}
+
+.uh-branding-one {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    font-style: normal;
+}
+.uh-branding-two {
+    font-family: 'Cinzel', serif;
+    font-size: 2.0em;
+    font-style: normal;
+}
+
+.uh-branding-one-shadow {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    font-style: normal;
+    text-shadow: 2px 2px 2px #aaa;
+}
+.uh-branding-two-shadow {
+    font-family: 'Cinzel', serif;
+    font-size: 2.0em;
+    font-style: normal;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+.uh-font-one {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2.5em;
+    font-style: normal;
+}
+.uh-font-one-sm {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2.0em;
+    font-style: normal;
+}
+
+.uh-font-two {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.0em;
+    font-style: normal;
+    font-variant: small-caps;
+}
+.uh-font-two-sm {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+.uh-font-three {
+    font-family: 'Bungee Shade', serif;
+    font-size: 2.5em;
+    font-style: normal;
+}
+.uh-font-three-sm {
+    font-family: 'Bungee Shade', serif;
+    font-size: 2.0em;
+    font-style: normal;
+}
