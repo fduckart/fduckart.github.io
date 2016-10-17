@@ -57,13 +57,13 @@
 
 .uh-font-two {
     font-family: 'EB Garamond', serif;
-    font-size: 3.0em;
+    font-size: 3.5em;
     font-style: normal;
     font-variant: small-caps;
 }
 .uh-font-two-sm {
     font-family: 'EB Garamond', serif;
-    font-size: 2.5em;
+    font-size: 2.9em;
     font-style: normal;
     font-variant: small-caps;
 }
@@ -108,17 +108,29 @@
 }
 .uh-font-six-sm {
     font-family: 'Cormorant SC', serif;
-    font-size: 3.0em;
+    font-size: 2.8em;
     font-style: normal;
 }
 
 .uh-font-seven {
     font-family: 'Nosifer', cursive;
-    font-size: 3.5em;
+    font-size: 3.0em;
     font-style: normal;
 }
 .uh-font-seven-sm {
     font-family: 'Nosifer', cursive;
+    font-size: 2.3em;
+    font-style: normal;
+}
+
+.uh-font-eight {
+    font-family: 'Faster One', cursive;
     font-size: 3.0em;
     font-style: normal;
 }
+.uh-font-eight-sm {
+    font-family: 'Faster One', cursive;
+    font-size: 2.3em;
+    font-style: normal;
+}
+
