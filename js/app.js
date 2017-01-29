@@ -21,7 +21,7 @@ var faveApp = angular.module('faveApp', []);
 
     function FilmJsController($scope) {
         $scope.films = [
-            {title: 'Citizen Kane', director: 'Orsen Welles'},
+            {title: 'Citizen Kane', director: 'Orson Welles'},
             {title: 'Chinatown', director: 'Brian DePalma'},
             {title: 'Blade Runner', director: 'Ridely Scott'},
             {title: 'Vertigo', director: 'Alfred Hitchcock'},
