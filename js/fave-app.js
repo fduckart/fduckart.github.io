@@ -14,6 +14,7 @@ var faveApp = angular.module('faveApp', []);
             {title: 'El Rayo-X', artist: 'David Lindley'},
             {title: 'Rid Of Me', artist: 'PJ Harvey'},
             {title: 'What\'s Going On?', artist: 'Marvin Gaye'},
+            {title: 'Purple Rain', artist: 'Prince'},
             {title: 'Highway to Hell', artist: 'AC/DC'}
         ];
     }
@@ -30,7 +31,6 @@ var faveApp = angular.module('faveApp', []);
             {title: 'Annie Hall', director: 'Woody Allen'},
             {title: 'The Wizard of Oz', director: 'Victor Fleming'},
             {title: 'Out of the Past', director: 'Jacques Tourneur'},
-            {title: '2001', director: 'Stanley Kubrick'},
             {title: 'The Conversation', director: 'Francis Ford Coppola'}
         ];
     }
