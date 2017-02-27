@@ -4,16 +4,19 @@
 }
 
 .navbar-default .navbar-brand,
-.navbar-default .navbar-brand:hover {
-    color: #d35400;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover  {
+    color: #BA4A00;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-    color: #0275d8;
+a.label.label-default:hover {
+    background-color: #BA4A00;
 }
 
 .label-default {
     font-size: 1em;
+    color: #F0F3F4;
+    background-color: #D0D3D4;
  }
 
 .tab-headings {
@@ -133,4 +136,3 @@
     font-size: 2.3em;
     font-style: normal;
 }
-
