@@ -31,6 +31,7 @@ var faveApp = angular.module('faveApp', []);
             {title: 'Annie Hall', director: 'Woody Allen'},
             {title: 'The Wizard of Oz', director: 'Victor Fleming'},
             {title: 'Out of the Past', director: 'Jacques Tourneur'},
+            {title: 'Casablanca', director: 'Michael Curtiz'},
             {title: 'The Conversation', director: 'Francis Ford Coppola'}
         ];
     }
