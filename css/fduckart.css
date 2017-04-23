@@ -3,6 +3,7 @@
     font-size: 1.4em;
 }
 
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav > li > a:hover  {
@@ -10,8 +11,9 @@
 }
 
 a.label.label-default:hover {
-    background-color: #BA4A00;
+    background-color: #D0D3D4;
 }
+
 
 .label-default {
     font-size: 1em;
