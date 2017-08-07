@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="faveApp">
   <head>
+    <title>Frank Duckart</title>
+
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Frank Duckart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fduckart.css">
@@ -15,26 +16,25 @@
   </head>
   <body>
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href=""><i class="fa fa-lg  fa-cogs" aria-hidden="true"></i>&nbsp;<b>Frank Duckart</b></a>
+          <a class="navbar-brand" href=""><b>Frank Duckart</b>&nbsp;<i class="fa fa-lg fa-cogs" aria-hidden="true"></i></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="https://github.com/fduckart"             target="_duckartgithub"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/fduckart"    target="_fduckartlinkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
-            <li><a href="https://www.facebook.com/duckart"        target="_fduckartfacebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-            <li><a href="https://www.flickr.com/photos/fduckart"  target="_fduckartflickr"><i class="fa fa-flickr" aria-hidden="true"></i> Flickr</a></li>
-            <li><a href="files/fduckart-resume.pdf"               target="_fduckartresume"><i class="fa fa-external-link-square" aria-hidden="true"></i> Résumé</a></li>
+            <li><a href="https://github.com/fduckart"             target="_duckartgithub"><i class="fa fa-github fa-lg" aria-hidden="true"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/fduckart"    target="_fduckartlinkedin"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i> LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/duckart"        target="_fduckartfacebook"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> Facebook</a></li>
+            <li><a href="files/fduckart-resume.pdf"               target="_fduckartresume"><i class="fa fa-external-link-square fa-lg" aria-hidden="true"></i> Résumé</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -47,6 +47,7 @@
                 <li><a href="http://www.hawaii.edu" target="_uh">UH</a></li>
                 <li><a href="http://manoa.hawaii.edu/" target="_uhmanoa">UH Manoa</a></li>
                 <li class="divider"></li>
+                <li><a href="https://www.flickr.com/photos/fduckart"  target="_fduckartflickr"><i class="fa fa-flickr fa-lg" aria-hidden="true"></i> Flickr</a></li>
                 <li><a href="https://www.codeschool.com/users/fduckart" target="_codesch">Code School</a></li>
                 <li><a href="fonts.html" target="_fontexp">Fonts</a></li>
               </ul>
@@ -60,6 +61,7 @@
             <li role="presentation" class="active"><a href="#records" data-toggle="tab" class='label label-default tab-headings'>Records</a></li>
             <li role="presentation"><a href="#films" data-toggle="tab" class='label label-default'>Films</a></li>
             <li role="presentation"><a href="#books" data-toggle="tab" class='label label-default'>Books</a></li>
+            <li role="presentation"><a href="#songs" data-toggle="tab" class='label label-default'>Songs</a></li>
         </ul>
         <div id='fav-tab-content' class='tab-content'  style='padding-top: 0rem;'>
             <div class='tab-pane active' id='records'>
@@ -83,7 +85,9 @@
                     </p>
                     <table class='table lead' ng-controller='FilmJsController'>
                         <tr ng-repeat="film in films">
-                            <td class='lead'>{{film.title}}</td><td>&nbsp;</td><td>{{film.director}}</td>
+                            <td class='lead'>{{film.title}}</td>
+                            <td>&nbsp;</td>
+                            <td>{{film.director}}</td>
                         </tr>
                     </table>
                 </div>
@@ -97,6 +101,19 @@
                     <table class='table lead' ng-controller='BookJsController'>
                         <tr ng-repeat="book in books">
                             <td class='lead'>{{book.title}}</td><td>&nbsp;</td><td>{{book.author}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class='tab-pane' id='songs'>
+                <div class='card-block'>
+                    <h3>Favorite Songs</h3>
+                    <p class="lead text-muted">
+                        My all time favorite songs.
+                    </p>
+                    <table class='table lead' ng-controller='SongJsController'>
+                        <tr ng-repeat="song in songs">
+                            <td class='lead'>{{song.title}}</td><td>&nbsp;</td><td>{{song.artist}}</td>
                         </tr>
                     </table>
                 </div>
