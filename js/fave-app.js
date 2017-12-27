@@ -8,6 +8,7 @@ var faveApp = angular.module('faveApp', []);
             {title: 'Shoot Out The Lights', artist: 'Richard & Linda Thompson'},
             {title: 'Another Green World', artist: 'Brian Eno'},
             {title: 'Kind Of Blue', artist: 'Miles Davis'},
+            {title: 'Rumours', artist: 'Fleetwood Mac'},
             {title: 'Moondance', artist: 'Van Morrison'},
             {title: 'Highway to Hell', artist: 'AC/DC'},
             {title: 'Horses', artist: 'Patti Smith'},
