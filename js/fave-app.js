@@ -25,7 +25,7 @@ var faveApp = angular.module('faveApp', []);
     function FilmJsController($scope) {
         $scope.films = [
             {title: 'Citizen Kane', director: 'Orson Welles', year: 1900},
-            {title: 'Chinatown', director: 'Brian DePalma', year: 1900},
+            {title: 'Chinatown', director: 'Roman Polanski', year: 1900},
             {title: 'Blade Runner', director: 'Ridely Scott', year: 1900},
             {title: 'Vertigo', director: 'Alfred Hitchcock', year: 1900},
             {title: 'Sunset Boulevard', director: 'Billy Wilder', year: 1900},
