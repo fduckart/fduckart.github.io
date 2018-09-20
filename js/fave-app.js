@@ -16,7 +16,7 @@ var faveApp = angular.module('faveApp', []);
             {title: 'El Rayo-X', artist: 'David Lindley'},
             {title: 'Rid of Me', artist: 'PJ Harvey'},
             {title: 'Remain in Light', artist: 'Talking Heads'},
-            {title: 'What\'s Going On?', artist: 'Marvin Gaye'},
+            {title: 'What\'s Going On', artist: 'Marvin Gaye'},
             {title: 'Purple Rain', artist: 'Prince'}
         ];
     }
