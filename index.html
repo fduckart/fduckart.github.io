@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fduckart.css">
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
     <script src="js/fave-app.js"></script>
   </head>
   <body>
@@ -60,9 +60,9 @@
     <div class="container">
         <ul id='tabs' class="nav nav-tabs" data-tabs='tabs'>
             <li role="presentation" class="active"><a href="#records" data-toggle="tab" class='label label-default tab-headings'>Records</a></li>
+            <li role="presentation"><a href="#songs" data-toggle="tab" class='label label-default'>Songs</a></li>
             <li role="presentation"><a href="#films" data-toggle="tab" class='label label-default'>Films</a></li>
             <li role="presentation"><a href="#books" data-toggle="tab" class='label label-default'>Books</a></li>
-            <li role="presentation"><a href="#songs" data-toggle="tab" class='label label-default'>Songs</a></li>
         </ul>
         <div id='fav-tab-content' class='tab-content'  style='padding-top: 0rem;'>
             <div class='tab-pane active' id='records'>
@@ -71,7 +71,7 @@
                     <p class="lead text-muted">
                         I have spent hours and hours listening to each and every one.
                     </p>
-                    <table class='table lead' ng-controller='RecordJsController'>
+                    <table class='table lead' ng-controller='RecordJsController' ng-cloak='true'>
                         <tr ng-repeat="record in records">
                             <td class='lead'>{{record.title}}</td><td>&nbsp;</td><td>{{record.artist}}</td>
                         </tr>

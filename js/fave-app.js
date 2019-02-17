@@ -24,18 +24,19 @@ var faveApp = angular.module('faveApp', []);
 
     function FilmJsController($scope) {
         $scope.films = [
-            {title: 'Citizen Kane', director: 'Orson Welles', year: 1900},
-            {title: 'Chinatown', director: 'Roman Polanski', year: 1900},
-            {title: 'Blade Runner', director: 'Ridely Scott', year: 1900},
-            {title: 'Vertigo', director: 'Alfred Hitchcock', year: 1900},
-            {title: 'Sunset Boulevard', director: 'Billy Wilder', year: 1900},
-            {title: 'The Rules of the Game', director: 'Jean Renoir', year: 1900},
-            {title: 'Annie Hall', director: 'Woody Allen', year: 1900},
-            {title: 'The Wizard of Oz', director: 'Victor Fleming', year: 1900},
-            {title: 'Out of the Past', director: 'Jacques Tourneur', year: 1900},
-            {title: 'Casablanca', director: 'Michael Curtiz', year: 1900},
-            {title: 'Ex Machina', director: 'Alex Garland', year: 1900},
-            {title: 'The Conversation', director: 'Francis Ford Coppola', year: 1900}
+            {title: 'Citizen Kane', director: 'Orson Welles', year: 1941},
+            {title: 'Chinatown', director: 'Roman Polanski', year: 1974},
+            {title: 'Blade Runner', director: 'Ridely Scott', year: 1982},
+            {title: 'Vertigo', director: 'Alfred Hitchcock', year: 1958},
+            {title: 'Wings of Desire', director: 'Wim Wenders', year: 1987},
+            {title: 'Sunset Boulevard', director: 'Billy Wilder', year: 1950},
+            {title: 'The Rules of the Game', director: 'Jean Renoir', year: 1939},
+            {title: 'Annie Hall', director: 'Woody Allen', year: 1977},
+            {title: 'The Wizard of Oz', director: 'Victor Fleming', year: 1939},
+            {title: 'Out of the Past', director: 'Jacques Tourneur', year: 1947},
+            {title: 'Casablanca', director: 'Michael Curtiz', year: 1942},
+            {title: 'Ex Machina', director: 'Alex Garland', year: 2014},
+            {title: 'The Conversation', director: 'Francis Ford Coppola', year: 1974}
         ];
     }
     faveApp.controller("FilmJsController", FilmJsController);
