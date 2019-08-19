@@ -31,6 +31,7 @@ var faveApp = angular.module('faveApp', []);
             {title: 'Wings of Desire', director: 'Wim Wenders', year: 1987},
             {title: 'Sunset Boulevard', director: 'Billy Wilder', year: 1950},
             {title: 'The Rules of the Game', director: 'Jean Renoir', year: 1939},
+            {title: 'In the Mood for Love', director: ' Kar Wai Wong', year: 2000},
             {title: 'Annie Hall', director: 'Woody Allen', year: 1977},
             {title: 'The Wizard of Oz', director: 'Victor Fleming', year: 1939},
             {title: 'Out of the Past', director: 'Jacques Tourneur', year: 1947},
