@@ -138,3 +138,27 @@ a.label.label-default:hover {
     font-size: 2.3em;
     font-style: normal;
 }
+
+.uh-font-nine {
+    font-family: 'Spirax', cursive;
+    font-size: 3.0em;
+    font-style: normal;
+}
+
+.uh-font-nine-sm {
+    font-family: 'Spirax', cursive;
+    font-size: 2.3em;
+    font-style: normal;
+}
+
+.uh-font-ten {
+    font-family: 'Megrim', cursive;
+    font-size: 3.0em;
+    font-style: normal;
+}
+
+.uh-font-ten-sm {
+    font-family: 'Megrim', cursive;
+    font-size: 2.3em;
+    font-style: normal;
+}
