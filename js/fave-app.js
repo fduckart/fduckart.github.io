@@ -10,7 +10,7 @@ var faveApp = angular.module('faveApp', []);
             {title: 'Kind Of Blue', artist: 'Miles Davis'},
             {title: 'Rumours', artist: 'Fleetwood Mac'},
             {title: 'Moondance', artist: 'Van Morrison'},
-            {title: 'Highway to Hell', artist: 'AC/DC'},
+            {title: 'If You Want Blood You''ve Got It', artist: 'AC/DC'},
             {title: 'Horses', artist: 'Patti Smith'},
             {title: 'How Will the Wolf Survive?', artist: 'Los Lobos'},
             {title: 'El Rayo-X', artist: 'David Lindley'},
