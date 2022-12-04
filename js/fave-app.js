@@ -3,23 +3,25 @@ var faveApp = angular.module('faveApp', []);
 
 (function() {
 
-    function RecordJsController($scope) {
-        $scope.records = [
-            {title: 'Shoot Out The Lights', artist: 'Richard & Linda Thompson'},
-            {title: 'Another Green World', artist: 'Brian Eno'},
-            {title: 'Kind Of Blue', artist: 'Miles Davis'},
-            {title: 'Rumours', artist: 'Fleetwood Mac'},
-            {title: 'Moondance', artist: 'Van Morrison'},
-            {title: 'If You Want Blood You\'ve Got It', artist: 'AC/DC'},
-            {title: 'Horses', artist: 'Patti Smith'},
-            {title: 'How Will the Wolf Survive?', artist: 'Los Lobos'},
-            {title: 'El Rayo-X', artist: 'David Lindley'},
-            {title: 'Rid of Me', artist: 'PJ Harvey'},
-            {title: 'Remain in Light', artist: 'Talking Heads'},
-            {title: 'What\'s Going On', artist: 'Marvin Gaye'},
-            {title: 'Shotgun Willie', artist: 'Willie Nelson'},
-            {title: 'Purple Rain', artist: 'Prince'}
-        ];
+    function RecordJsController($scope, $http) {
+        $scope.init = () => {
+            $scope.records = [
+                {title: 'Shoot Out The Lights', artist: 'Richard & Linda Thompson'},
+                {title: 'Another Green World', artist: 'Brian Eno'},
+                {title: 'Kind Of Blue', artist: 'Miles Davis'},
+                {title: 'Rumours', artist: 'Fleetwood Mac'},
+                {title: 'Moondance', artist: 'Van Morrison'},
+                {title: 'If You Want Blood You\'ve Got It', artist: 'AC/DC'},
+                {title: 'Horses', artist: 'Patti Smith'},
+                {title: 'How Will the Wolf Survive?', artist: 'Los Lobos'},
+                {title: 'El Rayo-X', artist: 'David Lindley'},
+                {title: 'Rid of Me', artist: 'PJ Harvey'},
+                {title: 'Remain in Light', artist: 'Talking Heads'},
+                {title: 'What\'s Going On', artist: 'Marvin Gaye'},
+                {title: 'Shotgun Willie', artist: 'Willie Nelson'},
+                {title: 'Purple Rain', artist: 'Prince'}
+            ];
+        };
     }
     faveApp.controller("RecordJsController", RecordJsController);
 

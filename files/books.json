@@ -1,0 +1,12 @@
+{"books": [
+  {"title": "Lolita", "author": "Vladimir Nabokov"},
+  {"title": "Nineteen Eighty Four", "author": "George Orwell"},
+  {"title": "Lucky Jim", "author": "Kingsley Amis"},
+  {"title": "Fear and Loathing in Las Vegas", "author": "Hunter S. Thomspon"},
+  {"title": "Things Fall Apart", "author": "Chinua Achebe"},
+  {"title": "Brave New World", "author": "Aldous Huxley"},
+  {"title": "Frankenstein", "author": "Mary Shelley"},
+  {"title": "Portnoy's Complaint", "author": "Philip Roth"},
+  {"title": "Experience", "author": "Martin Amis"},
+  {"title": "Life", "author": "Keith Richards"}
+]}

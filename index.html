@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fduckart.css">
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="js/fave-app.js"></script>
   </head>
   <body>
@@ -45,11 +45,10 @@
                 <li><a href="https://www.hawaii.edu/filedrop" target="_filedrop">Filedrop</a></li>
                 <li><a href="https://www.hawaii.edu/its/ws/holiday" target="_holiday">Holidays</a></li>
                 <li class="divider"></li>
-                <li><a href="http://www.hawaii.edu" target="_uh">UH</a></li>
-                <li><a href="http://manoa.hawaii.edu/" target="_uhmanoa">UH Manoa</a></li>
+                <li><a href="https://www.hawaii.edu/" target="_uh">UH</a></li>
+                <li><a href="https://manoa.hawaii.edu/" target="_uhmanoa">UH Manoa</a></li>
                 <li class="divider"></li>
                 <li><a href="https://www.flickr.com/photos/fduckart"  target="_fduckartflickr"><i class="fa fa-flickr fa-lg" aria-hidden="true"></i> Flickr</a></li>
-                <li><a href="https://www.codeschool.com/users/fduckart" target="_codesch">Code School</a></li>
                 <li><a href="fonts.html" target="_fontexp">Fonts</a></li>
               </ul>
             </li>
@@ -71,7 +70,7 @@
                     <p class="lead text-muted">
                         I have spent hours and hours listening to each and every one.
                     </p>
-                    <table class='table lead' ng-controller='RecordJsController' ng-cloak='true'>
+                    <table class='table lead' ng-controller='RecordJsController' ng-init="init()" ng-cloak='true'>
                         <tr ng-repeat="record in records">
                             <td class='lead'>{{record.title}}</td><td>&nbsp;</td><td>{{record.artist}}</td>
                         </tr>
