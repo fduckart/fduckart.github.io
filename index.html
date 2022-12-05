@@ -57,63 +57,63 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
-        <ul id='tabs' class="nav nav-tabs" data-tabs='tabs'>
-            <li role="presentation" class="active"><a href="#records" data-toggle="tab" class='label label-default tab-headings'>Records</a></li>
-            <li role="presentation"><a href="#songs" data-toggle="tab" class='label label-default'>Songs</a></li>
-            <li role="presentation"><a href="#films" data-toggle="tab" class='label label-default'>Films</a></li>
-            <li role="presentation"><a href="#books" data-toggle="tab" class='label label-default'>Books</a></li>
+        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li role="presentation" class="active"><a href="#records" data-toggle="tab" class="label label-default tab-headings">Records</a></li>
+            <li role="presentation"><a href="#songs" data-toggle="tab" class="label label-default">Songs</a></li>
+            <li role="presentation"><a href="#films" data-toggle="tab" class="label label-default">Films</a></li>
+            <li role="presentation"><a href="#books" data-toggle="tab" class="label label-default">Books</a></li>
         </ul>
-        <div id='fav-tab-content' class='tab-content'  style='padding-top: 0rem;'>
-            <div class='tab-pane active' id='records'>
-                <div class='card-block'>
-                    <h3 class='tab-headings'>Favorite Albums</h3>
+        <div id="fav-tab-content" class="tab-content"  style="padding-top: 0rem;">
+            <div class="tab-pane active" id="records">
+                <div class="card-block">
+                    <h3 class="tab-headings">Favorite Albums</h3>
                     <p class="lead text-muted">
                         I have spent hours and hours listening to each and every one.
                     </p>
-                    <table class='table lead' ng-controller='RecordJsController' ng-init="init()" ng-cloak='true'>
+                    <table class="table lead" ng-controller="RecordJsController" ng-init="init()" ng-cloak="true">
                         <tr ng-repeat="record in records">
-                            <td class='lead'>{{record.title}}</td><td>&nbsp;</td><td>{{record.artist}}</td>
+                            <td class="lead">{{record.title}}</td><td>&nbsp;</td><td>{{record.artist}}</td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class='tab-pane' id='films'>
-                <div class='card-block'>
+            <div class="tab-pane" id="films">
+                <div class="card-block">
                     <h3>Favorite Films</h3>
                     <p class="lead text-muted">
                         These are great films. Watch them.
                     </p>
-                    <table class='table lead' ng-controller='FilmJsController'>
+                    <table class="table lead" ng-controller="FilmJsController" ng-init="init()" ng-cloak="true">
                         <tr ng-repeat="film in films">
-                            <td class='lead'>{{film.title}}</td>
+                            <td class="lead">{{film.title}}</td>
                             <td>&nbsp;</td>
                             <td>{{film.director}}</td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class='tab-pane' id='books'>
-                <div class='card-block'>
+            <div class="tab-pane" id="books">
+                <div class="card-block">
                     <h3>Favorite Books</h3>
                     <p class="lead text-muted">
                         This odd mix of books make up my favorites.
                     </p>
-                    <table class='table lead' ng-controller='BookJsController'>
+                    <table class="table lead" ng-controller="BookJsController" ng-init="init()" ng-cloak="true">
                         <tr ng-repeat="book in books">
-                            <td class='lead'>{{book.title}}</td><td>&nbsp;</td><td>{{book.author}}</td>
+                            <td class="lead">{{book.title}}</td><td>&nbsp;</td><td>{{book.author}}</td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class='tab-pane' id='songs'>
-                <div class='card-block'>
+            <div class="tab-pane" id="songs">
+                <div class="card-block">
                     <h3>Favorite Songs</h3>
                     <p class="lead text-muted">
                         My all time favorite songs.
                     </p>
-                    <table class='table lead' ng-controller='SongJsController'>
+                    <table class="table lead" ng-controller="SongJsController" ng-init="init()" ng-cloak="true">
                         <tr ng-repeat="song in songs">
-                            <td class='lead'>{{song.title}}</td><td>&nbsp;</td><td>{{song.artist}}</td>
+                            <td class="lead">{{song.title}}</td><td>&nbsp;</td><td>{{song.artist}}</td>
                         </tr>
                     </table>
                 </div>
