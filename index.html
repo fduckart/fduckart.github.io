@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Frank Duckart</title>
 
@@ -71,7 +71,7 @@
                     <p class="lead text-muted">
                         I have spent hours and hours listening to each and every one.
                     </p>
-                    <p id="recordData"></p>
+                    <div id="recordTable"></div>
                 </div>
             </div>
             <div class="tab-pane" id="films">
@@ -80,7 +80,7 @@
                     <p class="lead text-muted">
                         These are great films. Watch them.
                     </p>
-                    <p id="filmData"></p>
+                    <p id="filmTable"></p>
                 </div>
             </div>
             <div class="tab-pane" id="books">
@@ -89,7 +89,7 @@
                     <p class="lead text-muted">
                         This odd mix of books make up my favorites.
                     </p>
-                    <p id="bookData"></p>
+                    <p id="bookTable"></p>
                 </div>
             </div>
             <div class="tab-pane" id="songs">
@@ -98,7 +98,7 @@
                     <p class="lead text-muted">
                         My all time favorite songs.
                     </p>
-                    <p id="songData"></p>
+                    <p id="songTable"></p>
                 </div>
             </div>
         </div>
@@ -109,266 +109,179 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
     <script type="text/babel">
-        function FaveRecordsTable() {
-            return (
+        class Films extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+              error: null,
+              films: []
+            };
+          }
+
+          componentDidMount() {
+            fetch("https://raw.githubusercontent.com/fduckart/fduckart.github.io/master/files/films.json")
+              .then(res => res.json())
+              .then(
+                (result) => {
+                  this.setState({
+                    films: result.films
+                  });
+                },
+                (error) => {
+                    console.log('Error: ', error);
+                }
+              )
+          }
+
+        render() {
+            /* Runs twice because of componentDidMount; so fix. */
+            const { films } = this.state;
+              return (
                 <div>
                     <table class="table lead">
                         <tbody>
-                            <tr class="lead">
-                                <td>Shoot Out The Lights</td>
-                                <td>Richard & Linda Thompson</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Another Green World</td>
-                                <td>Brian Eno</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Kind Of Blue</td><td>Miles Davis</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Rumours</td><td>Fleetwood Mac</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Moondance</td><td>Van Morrison</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>If You Want Blood You've Got It</td>
-                                <td>AC/DC</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Horses</td><td>Patti Smith</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>How Will the Wolf Survive?</td><td>Los Lobos</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>El Rayo-X</td><td>David Lindley</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Rid of Me</td><td>PJ Harvey</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Remain in Light</td><td>Talking Heads</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>What's Going On</td><td>Marvin Gaye</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Shotgun Willie</td><td>Willie Nelson</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Purple Rain</td><td>Prince</td>
-                            </tr>
+                            {films.map(f => (
+                                <tr>
+                                    <td>{f.title}</td><td>{f.director}</td><td>{f.year}</td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
-                </div>);
+                </div>
+                );
+            }
         }
-        ReactDOM.render(<FaveRecordsTable />, document.getElementById('recordData'));
-    </script>
+        ReactDOM.render(<Films />, document.getElementById('filmTable'));
 
-    <script type="text/babel">
-        function FaveFilmsTable() {
-            return (
+        class Songs extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+              error: null,
+              songs: []
+            };
+          }
+
+          componentDidMount() {
+            fetch("https://raw.githubusercontent.com/fduckart/fduckart.github.io/master/files/songs.json")
+              .then(res => res.json())
+              .then(
+                (result) => {
+                  this.setState({
+                    songs: result.songs
+                  });
+                },
+                (error) => {
+                    console.log('Error: ', error);
+                }
+              )
+          }
+
+        render() {
+            const { songs } = this.state;
+              return (
                 <div>
                     <table class="table lead">
                         <tbody>
-                            <tr class="lead">
-                                <td>Citizen Kane</td>
-                                <td>Orson Welles</td>
-                                <td>1941</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Chinatown</td>
-                                <td>Roman Polanski</td>
-                                <td>1974</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Blade Runner</td>
-                                <td>Ridely Scott</td>
-                                <td>1982</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Vertigo</td>
-                                <td>Alfred Hitchcock</td>
-                                <td>1958</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Wings of Desire</td>
-                                <td>Wim Wenders</td>
-                                <td>1987</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Sunset Boulevard</td>
-                                <td>Billy Wilder</td>
-                                <td>1950</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>The Rules of the Game</td>
-                                <td>Jean Renoir</td>
-                                <td>1939</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>In the Mood for Love</td>
-                                <td> Kar Wai Wong</td>
-                                <td>2000</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Annie Hall</td>
-                                <td>Woody Allen</td>
-                                <td>1977</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>The Wizard of Oz</td>
-                                <td>Victor Fleming</td>
-                                <td>1939</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Out of the Past</td>
-                                <td>Jacques Tourneur</td>
-                                <td>1947</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Casablanca</td>
-                                <td>Michael Curtiz</td>
-                                <td>1942</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>Ex Machina</td>
-                                <td>Alex Garland</td>
-                                <td>2014</td>
-                            </tr>
-                            <tr class="lead">
-                                <td>The Conversation</td>
-                                <td>Francis Ford Coppola</td>
-                                <td>1974</td>
-                            </tr>
+                            {songs.map(item => (
+                                <tr>
+                                    <td>{item.title}</td><td>{item.artist}</td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
-                </div>);
+                </div>
+                );
+            }
         }
-        ReactDOM.render(<FaveFilmsTable />, document.getElementById('filmData'));
-    </script>
+        ReactDOM.render(<Songs />, document.getElementById('songTable'));
 
-    <script type="text/babel">
-        function FaveSongsTable() {
-            return (
+        class Books extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+              error: null,
+              books: []
+            };
+          }
+
+          componentDidMount() {
+            fetch("https://raw.githubusercontent.com/fduckart/fduckart.github.io/master/files/books.json")
+              .then(res => res.json())
+              .then(
+                (result) => {
+                  this.setState({
+                    books: result.books
+                  });
+                },
+                (error) => {
+                    console.log('Error: ', error);
+                }
+              )
+          }
+
+        render() {
+            const { books } = this.state;
+              return (
                 <div>
                     <table class="table lead">
                         <tbody>
-                            <tr>
-                                <td>Sheela-Na-Gig</td>
-                                <td>PJ Harvey</td>
-                            </tr>
-                            <tr>
-                                <td>Sky Saw</td>
-                                <td>Brian Eno</td>
-                            </tr>
-                            <tr>
-                                <td>Into The Mystic</td>
-                                <td>Van Morrison</td>
-                            </tr>
-                            <tr>
-                                <td>Do It Again</td>
-                                <td>Steely Dan</td>
-                            </tr>
-                            <tr>
-                                <td>Sweet Home Alabama</td>
-                                <td>Lynyrd Skynyrd</td>
-                            </tr>
-                            <tr>
-                                <td>Hate It Here</td>
-                                <td>Wilco</td>
-                            </tr>
-                            <tr>
-                                <td>Gimme Shelter</td>
-                                <td>The Rolling Stones</td>
-                            </tr>
-                            <tr>
-                                <td>Sultans of Swing</td>
-                                <td>Dire Straits</td>
-                            </tr>
-                            <tr>
-                                <td>Fast Car</td>
-                                <td>Tracy Chapman</td>
-                            </tr>
-                            <tr>
-                                <td>Chameleon</td>
-                                <td>Herbie Hancock</td>
-                            </tr>
-                            <tr>
-                                <td>Planet Claire</td>
-                                <td>The B-52s</td>
-                            </tr>
-                            <tr>
-                                <td>Watching the Detectives</td>
-                                <td>Elvis Costello</td>
-                            </tr>
-                            <tr>
-                                <td>Money</td>
-                                <td>Pink Floyd</td>
-                            </tr>
-                            <tr>
-                                <td>Blitzkrieg Bop</td>
-                                <td>Ramones</td>
-                            </tr>
-                            <tr>
-                                <td>Heroes</td>
-                                <td>David Bowie</td>
-                            </tr>
-                            <tr>
-                                <td>Guilty</td>
-                                <td>Randy Newman</td>
-                            </tr>
+                            {books.map(item => (
+                                <tr>
+                                    <td>{item.title}</td><td>{item.author}</td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
-                </div>);
+                </div>
+                );
+            }
         }
-        ReactDOM.render(<FaveSongsTable />, document.getElementById('songData'));
-    </script>
+        ReactDOM.render(<Books />, document.getElementById('bookTable'));
 
+        class Records extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+              error: null,
+              records: []
+            };
+          }
 
-    <script type="text/babel">
-        function FaveBooksTable() {
-            return (
+          componentDidMount() {
+            fetch("https://raw.githubusercontent.com/fduckart/fduckart.github.io/master/files/records.json")
+              .then(res => res.json())
+              .then(
+                (result) => {
+                  this.setState({
+                    records: result.records
+                  });
+                },
+                (error) => {
+                    console.log('Error: ', error);
+                }
+              )
+          }
+
+        render() {
+            const { records } = this.state;
+              return (
                 <div>
                     <table class="table lead">
                         <tbody>
-                            <tr>
-                                <td>Lolita</td><td>Vladimir Nabokov</td>
-                            </tr>
-                            <tr>
-                                <td>Nineteen Eighty Four</td><td>George Orwell</td>
-                            </tr>
-                            <tr>
-                                <td>Lucky Jim</td><td>Kingsley Amis</td></tr>
-                            <tr>
-                                <td>Fear and Loathing in Las Vegas</td><td>Hunter S. Thomspon</td>
-                            </tr>
-                            <tr>
-                                <td>Things Fall Apart</td><td>Chinua Achebe</td>
-                            </tr>
-                            <tr>
-                                <td>Brave New World</td><td>Aldous Huxley</td>
-                            </tr>
-                            <tr>
-                                <td>Frankenstein</td><td>Mary Shelley</td>
-                            </tr>
-                            <tr>
-                                <td>Portnoy's Complaint</td><td>Philip Roth</td>
-                            </tr>
-                            <tr>
-                                <td>Experience</td><td>Martin Amis</td>
-                            </tr>
-                            <tr>
-                                <td>Life</td><td>Keith Richards</td>
-                            </tr>
+                            {records.map(item => (
+                                <tr>
+                                    <td>{item.title}</td><td>{item.artist}</td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
-                </div>);
+                </div>
+                );
+            }
         }
-        ReactDOM.render(<FaveBooksTable />, document.getElementById('bookData'));
+        ReactDOM.render(<Records />, document.getElementById('recordTable'));
     </script>
-
 
   </body>
 </html>
