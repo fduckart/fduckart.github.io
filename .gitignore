@@ -1,0 +1,16 @@
+.classpath
+.project
+.DS_Store
+output*.txt
+/.settings
+/bin
+/target
+*-overrides.properties
+/mvnw
+/mvnw.cmd
+.idea/
+.gradle/
+/.externalToolBuilders/
+/node_modules
+/.idea
+run.sh
