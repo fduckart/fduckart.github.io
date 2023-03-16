@@ -1,19 +1,21 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import './Records.js';
+import './css/bootstrap.min.css';
+
+import './js/bootstrap.bundle.min.js';
+import './js/bootstrap.bundle.min.js.map';
+
+import './css/font-awesome.min.css';
+import './css/fduckart.css';
+
+import {Nav} from './Nav';
+import {Content} from "./Content";
 
 function App() {
-  return (
-    <div className="App">
-        <div class="card-block">
-            <h3 class="tab-headings">Favorite Albums</h3>
-            <p class="lead text-muted">
-                I have spent hours and hours listening to each and every one.
-            </p>
-            <div id="recordTable"></div>
-        </div>
-    </div>
-  );
+  return (
+      <div className="App">
+        <Nav/>
+        <Content/>
+      </div>
+  );
 }
 
 export default App;

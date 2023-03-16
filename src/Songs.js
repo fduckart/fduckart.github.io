@@ -1,11 +1,11 @@
 import React from 'react';
 import {Favorites} from './Favorites.js';
 
-export class Records extends Favorites {
+export class Songs extends Favorites {
 
     fetchSuccessHandler(result) {
         this.setState({
-            items: result.records
+            items: result.songs
         });
     }
 
@@ -13,9 +13,9 @@ export class Records extends Favorites {
         const { items } = this.state;
         return (
             <div>
-                <h3 className="tab-headings">Favorite Albums</h3>
+                <h3>Favorite Songs</h3>
                 <p className="lead text-muted">
-                    I have spent hours and hours listening to each and every one.
+                    My all time favorite songs.
                 </p>
                 <table className='table lead'>
                     <tbody>
@@ -33,7 +33,7 @@ export class Records extends Favorites {
     }
 
     sourceData() {
-        return this.sourceDataLocation() + "records.json";
+        return this.sourceDataLocation() + "songs.json";
     }
 
 }
