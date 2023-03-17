@@ -1,8 +1,11 @@
+body {
+    overflow-y: scroll !important;
+}
+
 .navbar-default .navbar-brand > b {
     font-family: 'Waiting for the Sunrise', cursive;
     font-size: 1.4em;
 }
-
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
@@ -14,16 +17,11 @@ a.label.label-default:hover {
     background-color: #D0D3D4;
 }
 
-
 .label-default {
     font-size: 1em;
     color: #FBFCFC;
     background-color: #D0D3D4;
  }
-
-.tab-headings {
-    font-family: 'Bungee Shade',
-}
 
 .uh-branding-one {
     font-family: 'Cinzel', serif;
