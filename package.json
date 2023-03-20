@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages --branch react-create-app-version --dest deploy --dist build",
+    "deploy": "gh-pages --branch react-create-app-version --dest docs --dist build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
