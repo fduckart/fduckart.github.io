@@ -7,7 +7,7 @@ export class Nav extends React.Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-md">
                 <div className="container">
                     <a className="navbar-brand fw-bold" href="/">Frank Duckart
                         &nbsp;
