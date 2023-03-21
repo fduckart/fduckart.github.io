@@ -1,7 +1,7 @@
-import './css/font-awesome.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import './css/fduckart.css';
 
-import {Nav} from './Nav';
+import {Nav} from './components/Nav';
 import {Content} from "./Content";
 
 function App() {

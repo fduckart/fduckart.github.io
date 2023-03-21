@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {Records} from "./Records";
-import {Films} from "./Films";
-import {Books} from "./Books";
-import {Songs} from "./Songs";
+import {Records} from "./components/Records";
+import {Films} from "./components/Films";
+import {Books} from "./components/Books";
+import {Songs} from "./components/Songs";
 
 export class Content extends React.Component {
 
@@ -16,7 +16,7 @@ export class Content extends React.Component {
                     <li role="tab" className="nav-item"><a href="#films" data-bs-toggle="tab" className="nav-link text-secondary" id="films-tab">Films</a></li>
                     <li role="tab" className="nav-item"><a href="#books" data-bs-toggle="tab" className="nav-link text-secondary" id="books-tab">Books</a></li>
                 </ul>
-                <div id="fav-tab-content" className="tab-content">
+                <div id="fav-tab-content" className="tab-content mt-1">
                     <div className="tab-pane container active" id="records">
                         <div className="card-block">
                             <Records/>
