@@ -1,7 +1,7 @@
-import { useEffect, useState} from 'react';
-import {URL_DATA_ROOT} from '../constant.js';
+import {useEffect, useState} from 'react';
+import {URL_DATA_ROOT} from '../constants';
 
-export const Books  = () => {
+export const Books = () => {
 
     const [books, setBooks] = useState([]);
 
@@ -9,15 +9,12 @@ export const Books  = () => {
         fetchData();
     }, []);
 
-
     const fetchData = () => {
-        const url =  URL_DATA_ROOT +  "books.json";
+        const url = URL_DATA_ROOT + "books.json";
         fetch(url)
             .then(response => response.json())
-            .then((result) => {
-                setBooks(result.books)
-            })
-            .catch((error)=> console.log('Error:', error));
+            .then(result => setBooks(result.books))
+            .catch(error => console.log('Error:', error));
     };
 
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import {URL_DATA_ROOT_LATEST} from '../constant.js';
+import {URL_DATA_ROOT_LATEST} from '../constants';
 
-export const PersonalLinks  = () => {
+export const PersonalLinks = () => {
 
     return (
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">

@@ -1,7 +1,7 @@
-import { useEffect, useState} from 'react';
-import {URL_DATA_ROOT} from '../constant.js';
+import {useEffect, useState} from 'react';
+import {URL_DATA_ROOT} from '../constants';
 
-export const Films  = () => {
+export const Films = () => {
 
     const [films, setFilms] = useState([]);
 
@@ -9,15 +9,12 @@ export const Films  = () => {
         fetchData();
     }, []);
 
-
     const fetchData = () => {
-        const url =  URL_DATA_ROOT +  "films.json";
+        const url = URL_DATA_ROOT + "films.json";
         fetch(url)
             .then(response => response.json())
-            .then((result) => {
-                setFilms(result.films)
-            })
-            .catch((error)=> console.log('Error:', error));
+            .then(result => setFilms(result.films))
+            .catch(error => console.log('Error:', error));
     };
 
     return (

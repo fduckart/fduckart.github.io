@@ -2,15 +2,15 @@ import 'font-awesome/css/font-awesome.min.css';
 import './css/fduckart.css';
 
 import {Nav} from './components/Nav';
-import {Content} from "./Content";
+import {Content} from "./components/Content";
 
 function App() {
-  return (
-      <div className="App">
-        <Nav/>
-        <Content/>
-      </div>
-  );
+    return (
+        <div className="App">
+          <Nav/>
+          <Content/>
+        </div>
+    );
 }
 
 export default App;
