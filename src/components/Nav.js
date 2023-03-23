@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {MoreLinks} from "./MoreLinks";
-import {PersonalLinks} from "./PersonalLinks";
+import {LinksMore} from "./LinksMore";
+import {LinksPersonal} from "./LinksPersonal";
 
 export const Nav = () => {
     return (
@@ -11,12 +11,18 @@ export const Nav = () => {
                     &nbsp;
                     <i className="fa fa-lg fa-cogs" aria-hidden="true"></i>
                 </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <PersonalLinks/>
-                    <MoreLinks/>
+                    <LinksPersonal/>
+                    <LinksMore/>
                 </div>
             </div>
         </nav>

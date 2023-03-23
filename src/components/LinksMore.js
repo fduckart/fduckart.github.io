@@ -1,12 +1,10 @@
 import React from 'react';
 
-export const MoreLinks = () => {
+export const LinksMore = () => {
     return (
         <ul className="navbar-nav ms-auto">
             <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    More
-                </a>
+                <a className="nav-link dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
                 <ul className="dropdown-menu dropdown-menu-end">
                     <li><a className="dropdown-item" href="https://www.hawaii.edu/leave" target="_leave">Leave</a></li>
                     <li><a className="dropdown-item" href="https://www.hawaii.edu/paystub/gate" target="_paystub">Paystub</a></li>
@@ -21,4 +19,4 @@ export const MoreLinks = () => {
             </li>
         </ul>
     );
-}
+};

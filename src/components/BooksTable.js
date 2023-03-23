@@ -1,20 +1,20 @@
 import useFetch from "../hooks/useFetch";
 
-const SongsTable = () => {
-    const {data, isLoading, error} = useFetch("songs.json");
+const BooksTable = () => {
+    const {data, isLoading, error} = useFetch("books.json");
 
     return (
         <table className='table lead'>
             <tbody>
                 {error && <tr><td>{error}</td></tr>}
                 {isLoading && <tr><td>Loading...</td></tr>}
-                {data && data.songs.map(s => (
-                    <tr key={s.id}>
-                        <td>{s.title}</td><td>{s.artist}</td>
+                {data && data.books.map(b => (
+                    <tr key={b.id}>
+                        <td>{b.title}</td><td>{b.author}</td>
                     </tr>
                 ))}
             </tbody>
         </table>
-    );
+    )
 }
-export default SongsTable;
+export default BooksTable;

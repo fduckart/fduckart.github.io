@@ -1,7 +1,7 @@
 import React from 'react';
-import {URL_DATA_ROOT_LATEST} from '../constants';
+import {URL_DATA_ROOT} from '../constants';
 
-export const PersonalLinks = () => {
+export const LinksPersonal = () => {
 
     return (
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -21,7 +21,7 @@ export const PersonalLinks = () => {
                 </a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href={URL_DATA_ROOT_LATEST + "/fduckart-resume.pdf"} target="_fduckartresume">
+                <a className="nav-link" href={URL_DATA_ROOT + "/fduckart-resume.pdf"} target="_fduckartresume">
                     <i className="fa fa-external-link-square fa-lg" aria-hidden="true"></i> Résumé
                 </a>
             </li>

@@ -5,7 +5,7 @@ import {Films} from "./Films";
 import {Books} from "./Books";
 import {Songs} from "./Songs";
 
-export const Content = () => {
+export const MainBody = () => {
 
     return (
         <div className="container mt-2">
