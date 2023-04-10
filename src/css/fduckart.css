@@ -1,0 +1,195 @@
+.App {
+    text-align: left;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.App-MyPadding {
+    padding-top: 0rem;
+}
+
+
+body {
+    overflow-y: scroll !important;
+}
+
+a.label.label-default:hover {
+    background-color: #D0D3D4;
+}
+
+.label-default {
+    font-size: 1em;
+    color: #FBFCFC;
+    background-color: #D0D3D4;
+ }
+
+.uh-branding-one {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    font-style: normal;
+}
+.uh-branding-two {
+    font-family: 'Cinzel', serif;
+    font-size: 2.0em;
+    font-style: normal;
+}
+
+.uh-branding-one-shadow {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    font-style: normal;
+    text-shadow: 2px 2px 2px #aaa;
+}
+.uh-branding-two-shadow {
+    font-family: 'Cinzel', serif;
+    font-size: 2.0em;
+    font-style: normal;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+.uh-font-one {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2.5em;
+    font-style: normal;
+}
+.uh-font-one-sm {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2.0em;
+    font-style: normal;
+}
+
+.uh-font-two {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.5em;
+    font-style: normal;
+    font-variant: small-caps;
+}
+.uh-font-two-sm {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.9em;
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+.uh-font-three {
+    font-family: 'Bungee Shade', serif;
+    font-size: 2.5em;
+    font-style: normal;
+}
+.uh-font-three-sm {
+    font-family: 'Bungee Shade', serif;
+    font-size: 2.0em;
+    font-style: normal;
+}
+
+.uh-font-four {
+    font-family: 'Special Elite', cursive;
+    font-size: 3.5em;
+    font-style: normal;
+}
+.uh-font-four-sm {
+    font-family: 'Special Elite', cursive;
+    font-size: 3.0em;
+    font-style: normal;
+}
+
+.uh-font-five {
+    font-family: 'Monoton', serif;
+    font-size: 3.1em;
+    font-style: normal;
+}
+.uh-font-five-sm {
+    font-family: 'Monoton', serif;
+    font-size: 2.0em;
+    font-style: normal;
+}
+
+.uh-font-six {
+    font-family: 'Cormorant SC', serif;
+    font-size: 3.5em;
+    font-style: normal;
+}
+.uh-font-six-sm {
+    font-family: 'Cormorant SC', serif;
+    font-size: 2.8em;
+    font-style: normal;
+}
+
+.uh-font-seven {
+    font-family: 'Nosifer', cursive;
+    font-size: 2.8em;
+    font-style: normal;
+}
+.uh-font-seven-sm {
+    font-family: 'Nosifer', cursive;
+    font-size: 2.3em;
+    font-style: normal;
+}
+
+.uh-font-eight {
+    font-family: 'Faster One', cursive;
+    font-size: 3.0em;
+    font-style: normal;
+}
+.uh-font-eight-sm {
+    font-family: 'Faster One', cursive;
+    font-size: 2.3em;
+    font-style: normal;
+}
+
+.uh-font-nine {
+    font-family: 'Spirax', cursive;
+    font-size: 3.0em;
+    font-style: normal;
+}
+
+.uh-font-nine-sm {
+    font-family: 'Spirax', cursive;
+    font-size: 2.3em;
+    font-style: normal;
+}
+
+.uh-font-ten {
+    font-family: 'Megrim', cursive;
+    font-size: 3.0em;
+    font-style: normal;
+}
+
+.uh-font-ten-sm {
+    font-family: 'Megrim', cursive;
+    font-size: 2.3em;
+    font-style: normal;
+}
