@@ -1,0 +1,66 @@
+{
+  "data": {
+    "records": [
+        {"id": "r01", "title":"Shoot Out The Lights!", "artist":"Richard & Linda Thompson"    },
+        {"id": "r02", "title":"Another Green World", "artist":"Brian Eno"    },
+        {"id": "r03", "title":"Kind Of Blue", "artist":"Miles Davis"    },
+        {"id": "r04", "title":"Rumours", "artist":"Fleetwood Mac"    },
+        {"id": "r05", "title":"Moondance", "artist":"Van Morrison"    },
+        {"id": "r06", "title":"If You Want Blood You've Got It", "artist":"AC/DC"    },
+        {"id": "r07", "title":"Horses", "artist":"Patti Smith"    },
+        {"id": "r08", "title":"How Will the Wolf Survive?", "artist":"Los Lobos"    },
+        {"id": "r09", "title":"El Rayo-X", "artist":"David Lindley"    },
+        {"id": "r10", "title":"Rid of Me", "artist":"PJ Harvey"    },
+        {"id": "r11", "title":"Remain in Light", "artist":"Talking Heads"    },
+        {"id": "r12", "title":"What's Going On", "artist":"Marvin Gaye"    },
+        {"id": "r13", "title":"Shotgun Willie", "artist":"Willie Nelson"    },
+        {"id": "r14", "title":"Purple Rain", "artist":"Prince"    }
+    ],
+    "films": [
+        {"id": "f01", "title":"Citizen Kane","director":"Orson Welles","year":1941},
+        {"id": "f02", "title":"Chinatown","director":"Roman Polanski","year":1974},
+        {"id": "f03", "title":"Blade Runner","director":"Ridely Scott","year":1982},
+        {"id": "f04", "title":"Vertigo","director":"Alfred Hitchcock","year":1958},
+        {"id": "f05", "title":"Wings of Desire","director":"Wim Wenders","year":1987},
+        {"id": "f06", "title":"Sunset Boulevard","director":"Billy Wilder","year":1950},
+        {"id": "f07", "title":"The Rules of the Game","director":"Jean Renoir","year":1939},
+        {"id": "f08", "title":"In the Mood for Love","director":" Kar Wai Wong","year":2000},
+        {"id": "f09", "title":"Annie Hall","director":"Woody Allen","year":1977},
+        {"id": "f10", "title":"The Wizard of Oz","director":"Victor Fleming","year":1939},
+        {"id": "f11", "title":"Out of the Past","director":"Jacques Tourneur","year":1947},
+        {"id": "f12", "title":"Casablanca","director":"Michael Curtiz","year":1942},
+        {"id": "f13", "title":"Ex Machina","director":"Alex Garland","year":2014},
+        {"id": "f14", "title":"The Conversation","director":"Francis Ford Coppola","year":1974}
+    ],
+    "books": [
+        {"id": "b01", "title": "Lolita", "author": "Vladimir Nabokov"},
+        {"id": "b02", "title": "Nineteen Eighty Four", "author": "George Orwell"},
+        {"id": "b03", "title": "Lucky Jim", "author": "Kingsley Amis"},
+        {"id": "b04", "title": "Fear and Loathing in Las Vegas", "author": "Hunter S. Thomspon"},
+        {"id": "b05", "title": "Things Fall Apart", "author": "Chinua Achebe"},
+        {"id": "b06", "title": "Brave New World", "author": "Aldous Huxley"},
+        {"id": "b07", "title": "Frankenstein", "author": "Mary Shelley"},
+        {"id": "b08", "title": "Portnoy's Complaint", "author": "Philip Roth"},
+        {"id": "b09", "title": "Experience", "author": "Martin Amis"},
+        {"id": "b10", "title": "Life", "author": "Keith Richards"}
+    ],
+    "songs" : [
+        {"id": "s01", "title": "Sheela-Na-Gig", "artist": "PJ Harvey"},
+        {"id": "s02", "title": "Sky Saw", "artist": "Brian Eno"},
+        {"id": "s03", "title": "Into The Mystic", "artist": "Van Morrison"},
+        {"id": "s04", "title": "Do It Again", "artist": "Steely Dan"},
+        {"id": "s05", "title": "Sweet Home Alabama", "artist": "Lynyrd Skynyrd"},
+        {"id": "s06", "title": "Hate It Here", "artist": "Wilco"},
+        {"id": "s07", "title": "Gimme Shelter", "artist": "The Rolling Stones"},
+        {"id": "s08", "title": "Sultans of Swing", "artist": "Dire Straits"},
+        {"id": "s09", "title": "Fast Car", "artist": "Tracy Chapman"},
+        {"id": "s10", "title": "Chameleon", "artist": "Herbie Hancock"},
+        {"id": "s11", "title": "Planet Claire", "artist": "The B-52s"},
+        {"id": "s12", "title": "Watching the Detectives", "artist": "Elvis Costello"},
+        {"id": "s13", "title": "Money", "artist": "Pink Floyd"},
+        {"id": "s14", "title": "Blitzkrieg Bop", "artist": "Ramones"},
+        {"id": "s15", "title": "Heroes", "artist": "David Bowie"},
+        {"id": "s16", "title": "Guilty", "artist": "Randy Newman"}
+    ]
+  }
+}
