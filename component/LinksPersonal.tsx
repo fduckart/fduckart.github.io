@@ -1,6 +1,6 @@
 import React from 'react';
 import {URL_DATA_ROOT} from '@/constant/constants';
-// import "@/styles/fduckart.css";
+
 export const LinksPersonal = () => {
 
     return (
