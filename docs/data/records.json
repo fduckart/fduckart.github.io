@@ -1,0 +1,18 @@
+{
+  "records": [
+    {"id": "r01", "title": "Shoot Out The Lights",            "artist": "Richard and Linda Thompson"},
+    {"id": "r02", "title": "Another Green World",             "artist": "Brian Eno"},
+    {"id": "r03", "title": "Kind Of Blue",                    "artist": "Miles Davis"},
+    {"id": "r04", "title": "Rumours",                         "artist": "Fleetwood Mac"},
+    {"id": "r05", "title": "Moondance",                       "artist": "Van Morrison"},
+    {"id": "r06", "title": "If You Want Blood You've Got It", "artist": "AC/DC"},
+    {"id": "r07", "title": "Horses",                          "artist": "Patti Smith"},
+    {"id": "r08", "title": "How Will the Wolf Survive?",      "artist": "Los Lobos"},
+    {"id": "r09", "title": "El Rayo-X",                       "artist": "David Lindley"},
+    {"id": "r10", "title": "Rid of Me",                       "artist": "PJ Harvey"},
+    {"id": "r11", "title": "Remain in Light",                 "artist": "Talking Heads"},
+    {"id": "r12", "title": "What's Going On",                 "artist": "Marvin Gaye"},
+    {"id": "r13", "title": "Shotgun Willie",                  "artist": "Willie Nelson"},
+    {"id": "r14", "title": "Purple Rain",                     "artist": "Prince"}
+  ]
+}
