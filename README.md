@@ -1,7 +1,8 @@
 Public github page. https://fduckart.github.io/
 
 This React project was bootstrapped with [Vite](https://vitejs.dev/).
+`$ npm install`<br/>
+`$ npm run dev`<br/>
 
-`$ npm install`
-
-`$ npm run dev`
+To deploy to Github Pages:<br/>
+`$ npm deploy`<br/>

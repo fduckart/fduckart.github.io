@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages --branch vite-react-version --dest docs --dist build",
+    "deploy": "gh-pages --branch deploy-gh-pages --dest docs --dist build",
     "preview": "vite preview"
   },
   "dependencies": {
