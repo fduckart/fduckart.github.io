@@ -5,4 +5,5 @@ This React project was bootstrapped with [Vite](https://vitejs.dev/).
 `$ npm run dev`<br/>
 
 To deploy to Github Pages:<br/>
+`$ npm run build`<br/>
 `$ npm run deploy`<br/>
