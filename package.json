@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "gh-pages --branch deploy-gh-pages --dest docs --dist dist",
     "start": "next start",
     "lint": "next lint"
   },
@@ -20,5 +21,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
