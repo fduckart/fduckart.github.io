@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState} from 'react';
 import {URL_DATA_ROOT} from '@/constant/constants';
 
 const useFetch = (url: string) => {
@@ -10,12 +10,12 @@ const useFetch = (url: string) => {
         fetch(URL_DATA_ROOT + url, {signal: abortter.signal})
             .then(response => {
                 if (!response.ok) {
-                    throw Error(`Could not retrieve data.`);
+                    throw Error('Could not retrieve data.');
                 }
-                return response.json()
+                return response.json();
             })
             .then(data => {
-                setData(data)
+                setData(data);
                 setIsLoading(false);
                 setError(null);
             })
@@ -28,6 +28,6 @@ const useFetch = (url: string) => {
     }, [url]);
 
     return {data, isLoading, error};
-}
+};
 
 export default useFetch;

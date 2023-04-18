@@ -1,16 +1,16 @@
 import React from 'react';
-
-import {LinksMore} from "./LinksMore";
-import {LinksPersonal} from "./LinksPersonal";
+import Link from 'next/link';
+import {NavLinksMore} from '@/components/NavLinksMore';
+import {NavLinksPersonal} from '@/components/NavLinksPersonal';
 
 export const Nav = () => {
     return (
         <nav className="navbar navbar-expand-md">
             <div className="container">
-                <a className="navbar-brand fw-bold" href="/">Frank Duckart
+                <Link className="navbar-brand fw-bold" href="/">Frank Duckart
                     &nbsp;
                     <i className="fa fa-lg fa-cogs" aria-hidden="true"></i>
-                </a>
+                </Link>
                 <button className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
@@ -21,10 +21,10 @@ export const Nav = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <LinksPersonal/>
-                    <LinksMore/>
+                    <NavLinksPersonal/>
+                    <NavLinksMore/>
                 </div>
             </div>
         </nav>
     );
-}
+};
