@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState} from 'react';
 import {URL_DATA_ROOT} from '@/constant/constants';
 
 const useFetch = (url: string) => {

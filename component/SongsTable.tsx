@@ -1,17 +1,15 @@
-import useFetch from "@/hook/useFetch";
-import {Song} from "@/type/Song";
+import useFetch from '@/hook/useFetch';
+import {items} from '@/type/Song';
 
 const SongsTable = () => {
-    const {data, isLoading, error} = useFetch("songs.json");
-    const holder: { songs: Song[] } = {songs: data ? data["songs"] : []};
-
+    const {data, isLoading, error} = useFetch('songs.json');
     return (
         <table className='table lead'>
             <tbody>
             {error && <tr><td>{error}</td></tr>}
             {isLoading && <tr><td>Loading...</td></tr>}
             {
-                !isLoading && holder.songs.map(s => (
+                !isLoading && items(data).map(s => (
                     <tr key={s.id}>
                         <td>{s.title}</td>
                         <td>{s.artist}</td>
