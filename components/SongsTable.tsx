@@ -19,5 +19,5 @@ const SongsTable = () => {
             </tbody>
         </table>
     );
-}
+};
 export default SongsTable;

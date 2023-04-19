@@ -1,12 +1,12 @@
-import {Nav} from "./Nav";
-import {MainBody} from "./MainBody";
+import {Nav} from './Nav';
+import {MainBody} from './MainBody';
 
 const Parent = () => {
     return (
-        <div className="App">
+        <div className='App'>
             <Nav/>
             <MainBody/>
         </div>
-    )
+    );
 };
 export default Parent;

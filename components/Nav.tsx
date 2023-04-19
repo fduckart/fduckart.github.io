@@ -1,7 +1,6 @@
 import React from 'react';
-
-import {LinksMore} from "./LinksMore";
-import {LinksPersonal} from "./LinksPersonal";
+import {LinksMore} from './LinksMore';
+import {LinksPersonal} from './LinksPersonal';
 
 export const Nav = () => {
     return (
@@ -27,4 +26,4 @@ export const Nav = () => {
             </div>
         </nav>
     );
-}
+};

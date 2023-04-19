@@ -1,7 +1,7 @@
 const Navbar = () => {
     return (
         <nav>
-            <div className="logo">
+            <div className='logo'>
                 <h1>Frank Navbar</h1>
             </div>
             <a>Home</a>
@@ -9,5 +9,5 @@ const Navbar = () => {
             <a>Faves</a>
         </nav>
     );
-}
+};
 export default Navbar;

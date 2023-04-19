@@ -1,8 +1,8 @@
-import useFetch from "@/hook/useFetch";
-import {items} from "@/type/Film";
+import useFetch from '@/hook/useFetch';
+import {items} from '@/type/Film';
 
 const FilmsTable = () => {
-    const {data, isLoading, error} = useFetch("films.json");
+    const {data, isLoading, error} = useFetch('films.json');
     return (
         <table className='table lead'>
             <tbody>
@@ -19,5 +19,5 @@ const FilmsTable = () => {
             </tbody>
         </table>
     );
-}
+};
 export default FilmsTable;

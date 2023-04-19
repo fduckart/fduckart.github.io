@@ -2,7 +2,7 @@ import useFetch from '@/hook/useFetch';
 import {items} from '@/type/Record';
 
 const RecordsTable = () => {
-    const {data, isLoading, error} = useFetch("records.json");
+    const {data, isLoading, error} = useFetch('records.json');
     return (
         <table className='table lead'>
             <tbody>
@@ -19,6 +19,5 @@ const RecordsTable = () => {
             </tbody>
         </table>
     );
-}
-
+};
 export default RecordsTable;
