@@ -5,5 +5,5 @@ export type Book = {
 };
 
 export const items = (data:{books:Book[]} | null): Book[] => {
-    return data ? data["books"]  : [];
+    return data ? data['books']  : [];
 };

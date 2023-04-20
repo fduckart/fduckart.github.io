@@ -5,5 +5,5 @@ export type Song = {
 };
 
 export const items = (data:{songs:Song[]} | null): Song[] => {
-    return data ? data["songs"]  : [];
+    return data ? data['songs']  : [];
 };

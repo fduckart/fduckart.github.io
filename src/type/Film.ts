@@ -5,5 +5,5 @@ export type Film = {
 };
 
 export const items = (data:{films:Film[]} | null): Film[] => {
-    return data ? data["films"]  : [];
+    return data ? data['films']  : [];
 };

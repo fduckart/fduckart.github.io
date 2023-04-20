@@ -1,6 +1,6 @@
 import React from 'react';
-import {LinksMore} from './LinksMore';
-import {LinksPersonal} from './LinksPersonal';
+import {LinksMore} from '@/components/LinksMore';
+import {LinksPersonal} from '@/components/LinksPersonal';
 
 export const Nav = () => {
     return (

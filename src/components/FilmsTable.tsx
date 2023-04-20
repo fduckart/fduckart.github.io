@@ -1,4 +1,4 @@
-import useFetch from '@/hook/useFetch';
+import useFetch from '@/src/hook/useFetch';
 import {items} from '@/type/Film';
 
 const FilmsTable = () => {

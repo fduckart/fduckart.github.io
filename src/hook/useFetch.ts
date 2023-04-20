@@ -10,7 +10,7 @@ const useFetch = (url: string) => {
         fetch(URL_DATA_ROOT + url, {signal: abortter.signal})
             .then(response => {
                 if (!response.ok) {
-                    throw Error(`Could not retrieve data.`);
+                    throw Error('Could not retrieve data.');
                 }
                 return response.json();
             })
@@ -28,6 +28,6 @@ const useFetch = (url: string) => {
     }, [url]);
 
     return {data, isLoading, error};
-}
+};
 
 export default useFetch;

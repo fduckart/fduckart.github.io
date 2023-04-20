@@ -1,8 +1,8 @@
 import React from 'react';
-import {Records} from './Records';
-import {Films} from './Films';
-import {Books} from './Books';
-import {Songs} from './Songs';
+import {Records} from '@/components/Records';
+import {Films} from '@/components/Films';
+import {Books} from '@/components/Books';
+import {Songs} from '@/components/Songs';
 
 export const MainBody = () => {
     return (
