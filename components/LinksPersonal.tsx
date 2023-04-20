@@ -2,7 +2,6 @@ import React from 'react';
 import {URL_DATA_ROOT} from '@/constant/constants';
 
 export const LinksPersonal = () => {
-
     return (
         <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
@@ -28,5 +27,4 @@ export const LinksPersonal = () => {
             </li>
         </ul>
     );
-
-}
+};

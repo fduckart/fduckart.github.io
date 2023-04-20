@@ -2,7 +2,7 @@
   "extends": "next/core-web-vitals",
   "rules": {
     "semi": ["error", "always"],
-    "quotes": ["error", "single"],
+    "quotes": ["error", "single", "avoid-escape"],
     "@next/next/no-html-link-for-pages": "off"
   }
 }

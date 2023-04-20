@@ -1,7 +1,6 @@
-import BooksTable from './BooksTable';
+import BooksTable from '@/components/BooksTable';
 
 export const Books = () => {
-
     return (
         <div>
             <h3>Favorite Books</h3>
@@ -11,5 +10,4 @@ export const Books = () => {
             <BooksTable/>
         </div>
     );
-
-}
+};

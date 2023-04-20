@@ -12,10 +12,10 @@ const useFetch = (url: string) => {
                 if (!response.ok) {
                     throw Error(`Could not retrieve data.`);
                 }
-                return response.json()
+                return response.json();
             })
             .then(data => {
-                setData(data)
+                setData(data);
                 setIsLoading(false);
                 setError(null);
             })

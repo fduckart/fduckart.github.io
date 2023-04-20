@@ -1,4 +1,4 @@
-import FilmsTable from './FilmsTable';
+import FilmsTable from '@/components/FilmsTable';
 
 export const Films = () => {
     return (
@@ -10,4 +10,4 @@ export const Films = () => {
             <FilmsTable/>
         </div>
     );
-}
+};

@@ -1,5 +1,5 @@
-import {Nav} from './Nav';
-import {MainBody} from './MainBody';
+import {Nav} from '@/components/Nav';
+import {MainBody} from '@/components/MainBody';
 
 const Parent = () => {
     return (

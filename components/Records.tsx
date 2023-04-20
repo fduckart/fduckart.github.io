@@ -1,4 +1,4 @@
-import RecordsTable from './RecordsTable';
+import RecordsTable from '@/components/RecordsTable';
 
 export const Records = () => {
     return (

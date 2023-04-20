@@ -1,8 +1,8 @@
-import useFetch from "@/hook/useFetch";
-import {items} from '@/type/Book'
+import useFetch from '@/hook/useFetch';
+import {items} from '@/type/Book';
 
 const BooksTable = () => {
-    const {data, isLoading, error} = useFetch("books.json");
+    const {data, isLoading, error} = useFetch('books.json');
     return (
         <table className='table lead'>
             <tbody>
@@ -18,6 +18,6 @@ const BooksTable = () => {
             }
             </tbody>
         </table>
-    )
-}
+    );
+};
 export default BooksTable;

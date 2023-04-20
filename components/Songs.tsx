@@ -1,4 +1,4 @@
-import SongsTable from './SongsTable';
+import SongsTable from '@/components/SongsTable';
 
 export const Songs = () => {
     return (
