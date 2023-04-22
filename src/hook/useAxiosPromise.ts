@@ -1,22 +1,17 @@
 import {useEffect, useState} from 'react';
 import {URL_DATA_ROOT} from '@/constant/constants';
+import axios from '@/hook/axiosConfig';
 
-const useFetch = (url: string) => {
+const useAxiosPromise = (url: string) => {
     const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
     useEffect(() => {
-        console.log('useFetch...');
+        console.log('useAxiosPromise...');
         const abortter = new AbortController();
-        fetch(URL_DATA_ROOT + url, {signal: abortter.signal})
-            .then(response => {
-                if (!response.ok) {
-                    throw Error('Could not retrieve data.');
-                }
-                return response.json();
-            })
-            .then(data => {
-                setData(data);
+        axios.get(URL_DATA_ROOT + url, {signal: abortter.signal})
+            .then(res => {
+                setData(res.data);
                 setIsLoading(false);
                 setError(null);
             })
@@ -32,4 +27,4 @@ const useFetch = (url: string) => {
     return {data, isLoading, error};
 };
 
-export default useFetch;
+export default useAxiosPromise;
