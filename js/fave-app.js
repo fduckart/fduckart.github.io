@@ -3,10 +3,10 @@ const faveApp = angular.module('faveApp', []);
 
 faveApp.constant('App', {
     Url: {
-        DATA_BOOKS: 'https://raw.githubusercontent.com/fduckart/fduckart.github.io/master/files/books.json',
-        DATA_FILMS: 'https://raw.githubusercontent.com/fduckart/fduckart.github.io/master/files/films.json',
-        DATA_RECORDS: 'https://raw.githubusercontent.com/fduckart/fduckart.github.io/master/files/records.json',
-        DATA_SONGS: 'https://raw.githubusercontent.com/fduckart/fduckart.github.io/master/files/songs.json'
+        DATA_BOOKS: 'https://raw.githubusercontent.com/fduckart/fduckart.github.io/data/v1/books.json',
+        DATA_FILMS: 'https://raw.githubusercontent.com/fduckart/fduckart.github.io/data/v1/films.json',
+        DATA_RECORDS: 'https://raw.githubusercontent.com/fduckart/fduckart.github.io/data/v1/records.json',
+        DATA_SONGS: 'https://raw.githubusercontent.com/fduckart/fduckart.github.io/data/v1/songs.json'
     }
 });
 
